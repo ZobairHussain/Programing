@@ -10,6 +10,16 @@ void preOrder(int i)
             preOrder(i*2+2);
 }
 
+void inOrder(int i)
+{
+        printf("%d ",a[i]);
+        if(a[i*2+1]!=-1)
+            inOrder(i*2+1);
+        printf("%d ",a[i]);
+        if(a[i*2+2]!=-1)
+            inOrder(i*2+2);
+}
+
 int main()
 {
     for(i=0;i<100;i++)
